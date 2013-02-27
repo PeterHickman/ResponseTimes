@@ -4,32 +4,37 @@ Parse Rails 3 production logs and report response times for each controller and 
 
 #Example report
 
-    FeedController#scores_updates : Requests .:     3626
-                                  : Overall ..:    22.00  1475.11 41105.00
-                                  : View .....:     2.90   387.92 31096.10
-                                  : AR .......:     0.00   151.91 15606.00
+    FeedController#sports_competitions : Requests .:    83324
+                                       : Overall ..:    46.00   436.59  7939.00
+                                       : View .....:     1.90    50.28  2134.60
+                                       : AR .......:     8.30    72.29  2387.30
 
-       FeedController#stats_match : Requests .:        2
-                                  : Overall ..:    40.00   128.50   217.00
-                                  : View .....:     2.80   103.15   203.50
-                                  : AR .......:     0.00     4.50     9.00
+     FeedController#sports_competitors : Requests .:        2
+                                       : Overall ..:  1086.00  1632.50  2179.00
+                                       : View .....:   683.10  1135.30  1587.50
+                                       : AR .......:   161.60   199.75   237.90
 
-     FeedController#stats_updates : Requests .:     4103
-                                  : Overall ..:    21.00  1960.44 45682.00
-                                  : View .....:     2.90   461.44 30558.70
-                                  : AR .......:     0.00   227.81 12359.40
+                FeedController#updates : Requests .:   848298
+                                       : Overall ..:    39.00   371.19 57240.00
+                                       : View .....:     1.10     6.88  8502.80
+                                       : AR .......:     6.90   310.44 54328.10
 
-           SessionsController#new : Requests .:        2
-                                  : Overall ..:     5.00    21.50    38.00
-                                  : View .....:     4.80    21.25    37.70
-                                  : AR .......:     0.00     0.00     0.00
+          OverviewController#dashboard : Requests .:      364
+                                       : Overall ..:  1242.00  3938.09 18825.00
+                                       : View .....:   373.30  1725.20 10334.20
+                                       : AR .......:   715.90  1979.74 14443.70
 
-           SportsController#index : Requests .:        3
-                                  : Overall ..:   874.00  1380.00  2090.00
-                                  : View .....:   224.80   289.53   407.90
-                                  : AR .......:     0.00   460.33   831.20
+    OverviewController#results_pending : Requests .:    11429
+                                       : Overall ..:   182.00  1339.55 16970.00
+                                       : View .....:    28.90   592.18  9340.30
+                                       : AR .......:    87.30   614.89  7710.40
 
-        SuppliersController#index : Requests .:        1
-                                  : Overall ..:   209.00   209.00   209.00
-                                  : View .....:   202.70   202.70   202.70
-                                  : AR .......:     0.00     0.00     0.00
+           OverviewController#schedule : Requests .:      116
+                                       : Overall ..:   183.00  1377.92  7683.00
+                                       : View .....:    43.50   521.89  2491.30
+                                       : AR .......:    68.50   742.21  6331.00
+
+             OverviewController#search : Requests .:       27
+                                       : Overall ..:  3479.00  5169.26  9821.00
+                                       : View .....:    42.60   378.65  1770.80
+                                       : AR .......:   893.00  2062.29  4114.70
