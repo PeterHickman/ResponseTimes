@@ -33,17 +33,6 @@ class MiniumAverageMaximum
   end
 end
 
-def mam(values)
-  x = values.sort
-
-  min = x.first
-  max = x.last
-
-  avg = x.inject(0.0){|a,b| a+b} / x.size
-
-  return min,avg,max
-end
-
 controller_and_action = nil
 
 data = Hash.new
