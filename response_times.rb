@@ -20,8 +20,12 @@ class MiniumAverageMaximum
       @max = value
       @sum = value
     else
-      @max = value if value > @max
-      @min = value if value < @min
+      if value > @max
+        @max = value
+      elsif value < @min
+        @min = value
+      end
+
       @sum += value
     end
 
